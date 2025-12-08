@@ -1,0 +1,9 @@
+{
+    "target": "esp32s3",
+    "builds": [
+        {
+            "name": "waveshare-s3-touch-amoled-2.06b",
+            "sdkconfig_append": []
+        }
+    ]
+}

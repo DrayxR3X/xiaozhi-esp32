@@ -1,0 +1,65 @@
+#ifndef _BOARD_CONFIG_H_
+#define _BOARD_CONFIG_H_
+
+#include <driver/gpio.h>
+
+#define AUDIO_INPUT_SAMPLE_RATE  24000
+#define AUDIO_OUTPUT_SAMPLE_RATE 24000
+
+#define AUDIO_INPUT_REFERENCE    true
+
+#define AUDIO_I2S_GPIO_MCLK  GPIO_NUM_17
+#define AUDIO_I2S_GPIO_WS    GPIO_NUM_41
+#define AUDIO_I2S_GPIO_BCLK  GPIO_NUM_18
+#define AUDIO_I2S_GPIO_DIN   GPIO_NUM_46
+#define AUDIO_I2S_GPIO_DOUT  GPIO_NUM_42
+
+#define AUDIO_CODEC_PA_PIN       GPIO_NUM_NC
+#define AUDIO_CODEC_I2C_SDA_PIN  GPIO_NUM_47
+#define AUDIO_CODEC_I2C_SCL_PIN  GPIO_NUM_48
+#define AUDIO_CODEC_ES8311_ADDR  ES8311_CODEC_DEFAULT_ADDR
+#define AUDIO_CODEC_ES7210_ADDR  ES7210_CODEC_DEFAULT_ADDR
+
+#define BOOT_BUTTON_GPIO        GPIO_NUM_0
+
+
+/*disp-qspi-lcd*/
+#define LCD_D0_PIN      GPIO_NUM_9
+#define LCD_D1_PIN      GPIO_NUM_10
+#define LCD_D2_PIN      GPIO_NUM_11
+#define LCD_D3_PIN      GPIO_NUM_12
+#define LCD_RST_PIN     GPIO_NUM_NC 
+#define LCD_CS_PIN      GPIO_NUM_13
+#define LCD_SCL_PIN     GPIO_NUM_14
+#define LCD_LIGHT_PIN   (GPIO_NUM_NC)
+
+#define LCD_WIDTH  410 
+#define LCD_HEIGHT 502
+ 
+#define DISPLAY_MIRROR_X false
+#define DISPLAY_MIRROR_Y false
+#define DISPLAY_SWAP_XY false
+
+#define DISPLAY_OFFSET_X  0
+#define DISPLAY_OFFSET_Y  0
+
+
+#define CAM_PIN_PWDN    GPIO_NUM_NC
+#define CAM_PIN_RESET   GPIO_NUM_NC
+#define CAM_PIN_VSYNC   GPIO_NUM_38
+#define CAM_PIN_HREF    GPIO_NUM_39
+#define CAM_PIN_PCLK    GPIO_NUM_21
+#define CAM_PIN_XCLK    GPIO_NUM_40
+#define CAM_PIN_SIOD    GPIO_NUM_NC
+#define CAM_PIN_SIOC    GPIO_NUM_NC
+#define CAM_PIN_D0      GPIO_NUM_1
+#define CAM_PIN_D1      GPIO_NUM_2
+#define CAM_PIN_D2      GPIO_NUM_3
+#define CAM_PIN_D3      GPIO_NUM_4
+#define CAM_PIN_D4      GPIO_NUM_5
+#define CAM_PIN_D5      GPIO_NUM_6
+#define CAM_PIN_D6      GPIO_NUM_7
+#define CAM_PIN_D7      GPIO_NUM_8
+
+
+#endif // _BOARD_CONFIG_H_
